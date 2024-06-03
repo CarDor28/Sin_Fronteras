@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sin Fronteras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Sin Fronteras: Mapa Interactivo de la Universidad</h1>
+        
+        <!-- CONTENEDOR DE LAS RUTAS -->
+        <form id="routeForm">
+
+            <!-- SELECTOR DEL PUNTO DE PARTIDA -->
+            <label for="start">Punto de partida:</label>
+            <select id="start">
+                <option value="">Seleccione un punto de partida</option>
+                <option value="Lobby">Lobby</option>
+                <option value="Cafeteria">Cafetería</option>
+                <option value="Laboratorio">Laboratorio</option>
+                <option value="Biblioteca">Biblioteca</option>
+                <option value="Redes">Redes</option>
+                <option value="Bloque A">Bloque A</option>
+                <option value="Bloque B">Bloque B</option>
+                <option value="Bloque C">Bloque C</option>
+            </select>
+            
+            <!-- SELECTOR DEL DESTINO--> 
+            <label for="end">Destino:</label>
+            <select id="end">
+                <option value="">Seleccione un destino</option>
+                <option value="Lobby">Lobby</option>
+                <option value="Cafeteria">Cafetería</option>
+                <option value="Laboratorio">Laboratorio</option>
+                <option value="Biblioteca">Biblioteca</option>
+                <option value="Redes">Redes</option>
+                <option value="Bloque A">Bloque A</option>
+                <option value="Bloque B">Bloque B</option>
+                <option value="Bloque C">Bloque C</option>
+            </select>
+
+            <button type="submit">Ver Ruta</button>
+            <button type="submit"><a href="global/index.html">Ver Mapa Global</a></button>
+            <button id="text-to-speech-btn" type="button">Audio-Guia de Ruta Seleccionada</button> <!-- BOTON DE CARLOS-->
+            
+        </form>
+
+        <!-- CONTENEDOR DEL MAPA -->
+        <div class="map-container">
+            <img src="mapa-universidad.png" alt="Mapa de la Universidad" class="map-image">
+            <canvas id="routeCanvas"></canvas>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

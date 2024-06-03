@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#map {
+    height: 80vh;
+    width: 100%;
+}
+
+#controls {
+    padding: 10px;
+    background-color: #e3f2fd; /* Azul pastel */
+    text-align: center;
+}
+
+#controls input, #controls button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#controls input {
+    width: 200px;
+}
+
+#controls button {
+    background-color: #64b5f6; /* Azul pastel */
+    color: white;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    background-color: #42a5f5;
+}
+
+@media (max-width: 600px) {
+    #controls input {
+        width: 150px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0f7fa;
+}
+
+h1 {
+    color: #00796b;
+}
